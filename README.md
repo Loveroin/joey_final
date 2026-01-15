@@ -12,9 +12,6 @@ A fully functional forum application built with Flask, allowing users to create,
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Directory Structure](#directory-structure)
-- [Contributing](#contributing)
-- [Contact](#contact)
 
 ---
 
@@ -58,7 +55,7 @@ This project is a forum application designed to facilitate user interaction thro
 ## Installation
 
 ### Prerequisites
-- Python 3.7 or higher
+- Python 3.12
 - pip (Python package manager)
 - A virtual environment (optional but recommended)
 
@@ -90,7 +87,7 @@ This project is a forum application designed to facilitate user interaction thro
    python run.py
    ```
 
-The application will be available at `http://localhost:8080`.
+The application will be available at `http://localhost:8008`.
 
 ---
 
@@ -112,67 +109,3 @@ The application will be available at `http://localhost:8080`.
 2. Navigate to the "Posts" page to view all posts.
 3. Create a new post or comment on an existing one.
 4. Update your profile details on the "Account" page.
-
----
-
-## Directory Structure
-
-```
-forum/
-├── __pycache__/         # Compiled Python files
-├── static/              # Static files
-│   ├── js/              # JavaScript files
-│   ├── profile_pics/    # Profile pictures
-│   └── stylesheets/     # CSS styles
-├── templates/           # HTML templates
-│   ├── account.html     # Account management page
-│   ├── base.html        # Base layout
-│   ├── createpost.html  # Create post page
-│   ├── editpost.html    # Edit post page
-│   ├── index.html       # Home page
-│   ├── login.html       # Login page
-│   ├── posts.html       # Posts listing page
-│   ├── signup.html      # Sign up page
-│   ├── users.html       # Admin user management
-│   └── view_post.html   # View individual post
-├── instance/
-│   └── site.db          # SQLite database
-├── .venv/               # Virtual environment
-├── forum/               # Main application package
-│   ├── __init__.py      # App initialization
-│   ├── forms.py         # Form classes
-│   ├── models.py        # Database models
-│   ├── routes.py        # Application routes
-├── requirements.txt     # Python dependencies
-├── run.py               # Application entry point
-└── README.md            # Project documentation
-```
-
----
-
-## Contributing
-
-Contributions are welcome! Follow these steps:
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add your message here"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-5. Submit a pull request.
-
----
-
-## Contact
-
-For any questions or suggestions, please contact:
-- Name: Tony Han
-- Email: tonytt2008@qq.com
-- GitHub: [Loveroin](https://github.com/Loveroin)
