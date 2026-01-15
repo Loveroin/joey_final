@@ -5,7 +5,7 @@
 {% block title %}  Create Post  {% endblock %}
 {% block content %}
 <form action="" method="POST">
-    {{ form.hidden_tag() }} <!-- Mainly copy this section just not variable names match from routes -->
+    {{ form.hidden_tag() }} 
     <fieldset class="form-group">
         <legend class="border-bottom mb-4">Create Post</legend>
         <div class="form-group">
@@ -13,7 +13,7 @@
             {% if form.subject.errors %}
                 {{ form.subject(class="form-control form-control-lg is-invalid") }}
                 <div class="invalid-feedback">
-                    {% for error in form.subject.errors %} <!--Dispalys the errors from the validators in the form class -->
+                    {% for error in form.subject.errors %} 
                         <span>{{ error }}</span>
                     {% endfor %}
                 </div>
