@@ -1,0 +1,30 @@
+:root { --radius: 16px; }
+
+body {
+  background: var(--bs-body-bg);
+}
+
+.page-bg {
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(13,110,253,.08), transparent 60%),
+              radial-gradient(1200px 600px at 80% 0%, rgba(108,117,125,.08), transparent 55%),
+              var(--bs-body-bg);
+  min-height: 100vh;
+}
+
+.brand-dot{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--bs-primary);
+  display: inline-block;
+}
+
+.avatar{
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+
+.content-card{
+  border-radius: var(--radius);
+}
